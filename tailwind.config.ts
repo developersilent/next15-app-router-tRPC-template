@@ -7,6 +7,9 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      Poppins: ["var(--font-poppins)"],
+    },
     extend: {
       colors: {
         background: "var(--background)",

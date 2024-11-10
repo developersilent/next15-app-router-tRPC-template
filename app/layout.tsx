@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
 import {TRPCReactProvider} from "@/server/trpc/react";
+import {poppins} from "@/fonts";
 
-// const poppins = Poppins({
-//   weight: "500",
-//   subsets: ["latin"],
-// })
 
 export const metadata: Metadata = {
   title: "next15+tRPC",
@@ -21,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
     <TRPCReactProvider>
       <body
-        className={`antialiased`}
+        className={` ${poppins.className} antialiased`}
       >
         {children}
       </body>
